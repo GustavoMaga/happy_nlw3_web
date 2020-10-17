@@ -1,0 +1,103 @@
+#page-landing {
+
+    /* fazendo com que a div tome todo o espaço do browser */
+    width: 100vw;
+    height: 100vh;
+
+    /* cor do background da paina */
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style da pagina de landing */
+
+#page-landing .content-wrapper {
+    
+    /* colocando a div em relativo a div que ficara no lado direito da pagina */
+    position: relative;
+
+    /* colocando o limite de 1100 px para o preenchimento da pagina com width */
+    width: 100%;
+    max-width: 1100px;
+
+    /* colocando o limite de 680 px para altura da div */
+    height: 100%;
+    max-height: 680px;
+
+    /* configuração de posicionamento dos itens em relação a div */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* colocando imagem no fundo da tela = | URL DA IMAGEM | INFO PARA REPETIÇÃO DA IMAGE | POSIÇÃO NO EIXO X | POSIÇÃO NO EIXO Y */
+    background: url('../../images/landing.svg') no-repeat 80% center;
+}
+
+.content-wrapper main {
+    /* fazendo com que a div tenha um tamanho especifica para que assim possa ter a quebra de linha */
+    max-width: 350px;
+}
+
+.content-wrapper main h1 {
+
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+.content-wrapper main p {
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/* style da div de localização */
+.content-wrapper .location{
+   
+    /* style de posição na pagina */
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    /* style do conteudo */
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+
+}
+
+.content-wrapper .location strong{
+    font-weight: 800;
+}
+
+
+/* style do button */
+.content-wrapper .enter-app{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 80px;
+    height: 80px;
+    background:#ffd666;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s;
+}
+
+.content-wrapper .enter-app:hover{
+    background-color: #96feff;
+}
